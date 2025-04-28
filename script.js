@@ -1,50 +1,24 @@
-// gsap.to('.quadrado', {
-//     x: 100,
-//     y: -200,
-//     backgroundColor: 'green',
-//     duration: 2,
-// });
-
-// gsap.to('.quadrado', {
-//     x: -50,
-//     y: 100,
-//     backgroundColor: 'red',
-//     duration: 2,
-//     delay: 2,
-// });
-
-// gsap.to('.quadrado', {
-//     x: 200,
-//     y: -40,
-//     rotate: '180deg',
-//     backgroundColor: 'pink',
-//     duration: 2,
-//     delay: 4,
-// });
-
 // Timeline
-const tl = gsap.timeline();
-tl.to('.quadrado', {
-    x: 100,
-    y: -200,
+const quadrados = document.querySelectorAll('.quadrado');
+
+const tl = gsap.timeline({
+    defaults: {
+        duration: 2,
+    },
+    repeat: 1,
+    yoyo: true,
+});
+
+tl.to(quadrados[1], {
     backgroundColor: 'green',
-    duration: 2,
-    stagger: 0.5,
 })
-    .to('.quadrado', {
-        x: -50,
-        y: 100,
-        backgroundColor: 'red',
-        duration: 2,
-        stagger: 0.5,
-    })
-    .to('.quadrado', {
+    .to(quadrados[0], {
         x: 200,
-        y: -40,
-        rotate: '180deg',
+        backgroundColor: 'red',
+    })
+    .to(quadrados[2], {
+        x: -200,
         backgroundColor: 'pink',
-        duration: 2,
-        stagger: 0.5,
     });
 
 const botaoPlay = document.querySelector('.play');
