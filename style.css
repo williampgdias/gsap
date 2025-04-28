@@ -19,3 +19,33 @@
     background-color: blue;
     border-radius: 12px;
 }
+
+button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 18px 24px;
+    border-radius: 12px;
+    color: white;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+}
+
+.pause {
+    background-color: red;
+}
+
+.play {
+    background-color: green;
+}
+
+.reverse {
+    background-color: grey;
+}

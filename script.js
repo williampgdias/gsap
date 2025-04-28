@@ -46,3 +46,19 @@ tl.to('.quadrado', {
         duration: 2,
         stagger: 0.5,
     });
+
+const botaoPlay = document.querySelector('.play');
+const botaoPause = document.querySelector('.pause');
+const botaoReverse = document.querySelector('.reverse');
+
+botaoPause.onclick = () => {
+    tl.pause();
+};
+
+botaoPlay.onclick = () => {
+    tl.play();
+};
+
+botaoReverse.onclick = () => {
+    tl.reverse();
+};
