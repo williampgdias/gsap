@@ -21,5 +21,7 @@ gsap.fromTo(
         y: -200,
         duration: 3,
         backgroundColor: 'green',
+        stagger: 0.5,
+        ease: 'elastic.out(1,0.3)',
     }
 );
