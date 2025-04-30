@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +22,35 @@
     -webkit-mask-image: url(assets/william-dias.svg);
     mask-image: url(assets/william-dias.svg);
     mask-repeat: no-repeat;
-    mask-size: 100%;
+    mask-size: 80vw;
     mask-position: center;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    z-index: 20;
+    bottom: 50%;
+    transform: translateY(50%);
+    font-family: 'Readex Pro', sans-serif;
+    padding-left: 40px;
+
+    h1 {
+        font-size: 8vw;
+        line-height: 100%;
+        margin-left: -10px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 7vw;
+        line-height: 100%;
+        margin-left: -10px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 3vw;
+        font-weight: 300;
+    }
 }
